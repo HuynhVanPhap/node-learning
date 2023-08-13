@@ -1,0 +1,19 @@
+<div class="mt-4">
+    <h3>Cập nhật khóa học</h3>
+
+    <form method="POST" action="/courses/update/{{course._id}}?_method=PUT">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="name" value="{{course.name}}">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Image</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" name="image" value="{{course.image}}">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Description</label>
+            <textarea class="form-control" id="exampleInputEmail1" name="description">{{course.description}}</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

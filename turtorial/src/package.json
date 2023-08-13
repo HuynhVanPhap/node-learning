@@ -1,0 +1,39 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect=127.0.0.1:9229 index.js",
+    "css": "sass --embed-source-map -w resources/scss/app.scss public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "learning"
+  ],
+  "author": "huynhvanphap198@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "5.3.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.1",
+    "jquery": "^3.7.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.4.2",
+    "mongoose-delete": "^1.0.1",
+    "mongoose-sequence": "^5.3.1",
+    "mongoose-slug-generator": "^1.0.4"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.1",
+    "sass": "^1.64.2"
+  },
+  "type": "module"
+}
